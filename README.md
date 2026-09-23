@@ -166,7 +166,7 @@ Other projects include:
 
 ## Website
 
-**Engineering portfolio:** https://edithdevstudio.com/engineering
+**Engineering portfolio:** https://edithdevstudio.com/engineering/
 
 ## Portfolio policy
 
