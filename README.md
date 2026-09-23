@@ -1,5 +1,7 @@
 # Simone Ferrari — Engineering Portfolio
 
+[**English**](README.md) · [Italiano](README.it.md)
+
 **Software Engineering · AI · Intelligent Systems**
 
 I study **Computer, Electronic and Telecommunications Engineering at the University of Parma** and develop personal software and technology projects through **EDITH Dev Studio**, my personal software-development studio for applications, prototypes and technical experimentation.
