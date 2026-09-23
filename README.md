@@ -2,43 +2,91 @@
 
 **Software Engineering · AI · Intelligent Systems**
 
-I study Computer, Electronic and Telecommunications Engineering at the University of Parma and develop personal software and technology projects through **EDITH Dev Studio**, my personal software-development studio for applications, prototypes and technical experimentation.
+I study **Computer, Electronic and Telecommunications Engineering at the University of Parma** and develop personal software and technology projects through **EDITH Dev Studio**, my personal software-development studio for applications, prototypes and technical experimentation.
 
-This repository is the index for a curated set of engineering projects. The original development repositories remain private where they contain internal material, personal data, configuration or proprietary work.
+This repository is the index for a curated set of engineering projects. Full development repositories remain private where they contain personal data, configuration, internal planning or proprietary work; the linked public editions expose representative architecture, code and verification evidence.
 
 ## Selected engineering projects
 
-### EDITH Overdrive — Performance Cockpit
+### 1. EDITH Overdrive — Performance Cockpit
 
 **Systems engineering · telemetry · concurrency · performance**
 
-Windows performance cockpit built around low-overhead telemetry, snapshot caching, asynchronous data acquisition, diagnostics, benchmark integration and explicit degradation when data is unavailable.
+Windows performance cockpit built around low-overhead live telemetry, shared snapshots, asynchronous acquisition, diagnostics, benchmark integration and graceful degradation.
+
+Evidence highlights:
+
+- fast/slow path separation
+- TTL-based snapshot reuse
+- concurrency control around expensive refreshes
+- performance-regression guardrails
+- representative C# source
+- source revision records 201 passing C# tests
 
 Repository: https://github.com/Aceishere66/EDITH-Overdrive-Showcase
 
-### EDITH Fit
+---
+
+### 2. EDITH Fit
 
 **Android · wearable data · synchronization · real-device validation**
 
-Health and workout-data platform using Health Connect, Samsung Health validation, Wear OS, Kotlin coroutines, local persistence and cloud synchronization with data provenance.
+Android health/workout platform using Health Connect, Samsung Health, Wear OS, Kotlin coroutines, Room and persistent synchronization.
+
+Evidence highlights:
+
+- source/device provenance preserved through normalization
+- incremental synchronization and idempotent state handling
+- phone-authoritative Wear OS protocol with monotonic revisions
+- physical Android instrumentation
+- 8 protocol + 191 app + 34 wear unit tests recorded passing at the showcased source snapshot
+- 54 physical-phone instrumented tests recorded passing
 
 Repository: https://github.com/Aceishere66/EDITH-Fit-Showcase
 
-### EDITH Aegis — AI Engineering Research
+---
+
+### 3. EDITH Aegis — AI Engineering & Model Lab
 
 **LLM evaluation · coding agents · context engineering · multi-model workflows**
 
-Public research subset focused on structured use of LLMs in software engineering: task-specific model evaluation, routing, coding-agent workflows, independent review, structured handoffs and evidence-based validation.
+Public research subset focused on structured use of LLMs and coding agents.
+
+Evidence highlights:
+
+- task/role-specific model routing
+- frozen benchmark holdout
+- precommitted acceptance criteria
+- evaluation-scorer correction after detecting a methodology flaw
+- independent implementation/review workflows
+- structured model/session handoffs
+
+A real 12-case critic holdout compared two finalist local models: both reached 12/12 verdict correctness with zero FP/FN, while the selected model achieved 0.9722 evidence recall against 0.8889 for the faster finalist.
 
 Repository: https://github.com/Aceishere66/EDITH-Aegis-Research
 
-### EDITH Intake — Multimodal Sensing Research
+---
 
-**Computer vision · IMU · RGB · ToF/depth · sensor-fusion research**
+### 4. EDITH Intake — Multimodal Sensing Research
 
-Research project exploring event-triggered wearable sensing and multimodal inference. Public material clearly separates current architecture/research from future measured validation.
+**Computer vision · IMU · RGB · depth · temporal inference**
+
+Research project exploring event-triggered wearable sensing and multimodal inference.
+
+Evidence highlights:
+
+- local DINOv2 perception experiments
+- 72-image multi-prototype reference bank
+- Depth Anything V2 Small local execution
+- temporal signal-processing pipeline
+- 4-state hysteresis intake state machine
+- physical-IMU capture/import foundation
+- timing/jitter/gap auditing
+- strict separation between software/simulation evidence and future physical-product validation
 
 Repository: https://github.com/Aceishere66/EDITH-Intake-Research
+
+---
 
 ## Technical profile
 
@@ -85,36 +133,47 @@ See [AI-assisted engineering](docs/AI_ASSISTED_ENGINEERING.md).
 
 ## Relevance to intelligent and autonomous systems
 
-I am not presenting these projects as prior autonomous-driving experience.
+These projects are **not** presented as prior autonomous-driving implementations.
 
-The transferable engineering work includes:
+The transferable engineering foundation includes:
 
 - asynchronous/concurrent software
 - live telemetry and sensor-data pipelines
 - hardware/API integration
 - partial-data and failure handling
 - performance-sensitive systems
+- state synchronization
 - automated validation
 - multimodal AI research
 - reproducible Git-based development
 
-See [transferable engineering relevance](docs/INTELLIGENT_SYSTEMS_RELEVANCE.md).
+See:
+
+- [Transferable engineering relevance](docs/INTELLIGENT_SYSTEMS_RELEVANCE.md)
+- [Project evidence matrix](docs/PROJECT_EVIDENCE_MATRIX.md)
 
 ## Additional experience
 
 Other projects include:
 
-- Upscaler Studio — local AI multimedia processing with FFmpeg and upscaling models
-- STEAM Lab / Arduino work — earlier prototyping and physical-computing experience
-- web and application projects across TypeScript, Python and database-backed systems
-- 3D modelling and video editing
+- **Upscaler Studio** — local AI multimedia processing with FFmpeg and upscaling models
+- **STEAM Lab / Arduino** — earlier prototyping and physical-computing experience
+- web/application projects across TypeScript, Python and database-backed systems
+- 3D modelling
+- video editing
 
 ## Website
 
-Engineering portfolio page:
+**Engineering portfolio:** https://edithdevstudio.com/engineering
 
-https://edithdevstudio.com/engineering
+## Portfolio policy
 
-## Notes
+Every linked repository is a curated showcase/research edition.
 
-The repositories linked above are curated showcase/research editions. They are designed to make representative engineering work inspectable without publishing private project data or entire internal repositories.
+The objective is to make representative engineering work inspectable while keeping private:
+
+- personal data
+- credentials/configuration
+- complete private-product source
+- internal planning material
+- sensitive research content
