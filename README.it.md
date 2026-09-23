@@ -166,7 +166,7 @@ Altri progetti includono:
 
 ## Sito
 
-**Portfolio tecnico:** https://edithdevstudio.com/engineering
+**Portfolio tecnico:** https://edithdevstudio.com/engineering/
 
 ## Policy del portfolio
 
